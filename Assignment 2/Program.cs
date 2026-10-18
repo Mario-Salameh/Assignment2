@@ -10,4 +10,4 @@ partTime.DisplayInfo();
 
 fullTime.Work();
 partTime.Work();
-//test
+//
