@@ -23,7 +23,7 @@ namespace Assignment_2
 
         public void Work()
         {
-            Console.WriteLine($"{Name} is working part-time.");
+            Console.WriteLine($"{Name} is working part time.");
         }
     }
 }

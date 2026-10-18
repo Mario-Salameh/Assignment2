@@ -21,7 +21,7 @@ namespace Assignment_2
 
         public void Work()
         {
-            Console.WriteLine($"{Name} is working full-time.");
+            Console.WriteLine($"{Name} is working full time.");
         }
     }
 }
