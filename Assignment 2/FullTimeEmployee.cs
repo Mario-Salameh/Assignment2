@@ -11,7 +11,7 @@ namespace Assignment_2
         {
             _monthlySalary = monthlySalary;
 
-            EmploymentType = "Full Time";
+            CheckEmploymentType("Full Time");
         }
         
         public override decimal CalculateSalary()
@@ -21,7 +21,13 @@ namespace Assignment_2
 
         public void Work()
         {
-            Console.WriteLine($"{Name} is working full time.");
+
+            if (EmploymentType != "Full Time" && EmploymentType != "Part Time")
+            {
+                Console.WriteLine($"{Name} has {EmploymentType}.");
+                return;
+            }
+            Console.WriteLine($"{Name} is working {EmploymentType}");
         }
     }
 }

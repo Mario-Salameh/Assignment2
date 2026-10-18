@@ -105,11 +105,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mmsalameh\\OneDrive - Trust Holding\\Desktop\\Backend Course\\Assignment 2\\Assignment 2\\Assignment 2.csproj",
+      "projectUniqueName": "C:\\Users\\mmsalameh\\source\\repos\\Mario-Salameh\\Assignment2\\Assignment 2\\Assignment 2.csproj",
       "projectName": "Assignment 2",
-      "projectPath": "C:\\Users\\mmsalameh\\OneDrive - Trust Holding\\Desktop\\Backend Course\\Assignment 2\\Assignment 2\\Assignment 2.csproj",
+      "projectPath": "C:\\Users\\mmsalameh\\source\\repos\\Mario-Salameh\\Assignment2\\Assignment 2\\Assignment 2.csproj",
       "packagesPath": "C:\\Users\\mmsalameh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mmsalameh\\OneDrive - Trust Holding\\Desktop\\Backend Course\\Assignment 2\\Assignment 2\\obj\\",
+      "outputPath": "C:\\Users\\mmsalameh\\source\\repos\\Mario-Salameh\\Assignment2\\Assignment 2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

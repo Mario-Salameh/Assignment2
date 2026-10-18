@@ -27,11 +27,13 @@ namespace Assignment_2
         {
             if (employmenttype != "Full Time" && employmenttype != "Part Time")
             {
-                Console.WriteLine("Invalid Employment Type");
+                EmploymentType = "Invalid Employment Type";
                 return;
             }
-
-            EmploymentType = employmenttype;
+            
+                EmploymentType = employmenttype;
+            
+           
         }
 
         public abstract decimal CalculateSalary();

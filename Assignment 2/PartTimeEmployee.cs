@@ -12,7 +12,7 @@ namespace Assignment_2
         {
             _hourlyWorked = hoursWorked;
             _hourlyRate = hourlyRate;
-            EmploymentType = "Part Time";
+            CheckEmploymentType("Part Time");
         }
 
         public override decimal CalculateSalary()
@@ -20,10 +20,15 @@ namespace Assignment_2
             return _hourlyWorked * _hourlyRate;
         }
 
-
+        
         public void Work()
         {
-            Console.WriteLine($"{Name} is working part time.");
+            if (EmploymentType != "Full Time" && EmploymentType != "Part Time")
+            {
+                Console.WriteLine($"{Name} has {EmploymentType}.");
+                return;
+            }
+            Console.WriteLine($"{Name} is working {EmploymentType}.");
         }
     }
 }
