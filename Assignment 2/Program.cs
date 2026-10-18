@@ -1,13 +1,47 @@
 ﻿
 using Assignment_2;
 
-FullTimeEmployee fullTime = new FullTimeEmployee(1,"Amjad",5000m);
+for(int i = 0; i < 2; i++) {
+    
+    int EmployeeId = Helper.IncreaseCounter();
+    Console.WriteLine("Enter Your Name");
+    string fullName = Console.ReadLine();
+    Console.WriteLine("Enter Employment Type ( 1 for Full Time, 2 for Part Time");
+    int EmploymentType = Convert.ToInt32(Console.ReadLine());
+    
+   
+    if (EmploymentType == 1)
+    {
+        Console.WriteLine("Enter Your Salary");
+        int Salary = Convert.ToInt32(Console.ReadLine());
 
-PartTimeEmployee partTime = new PartTimeEmployee(2,"Hani",120m,7m);
+        FullTimeEmployee fullTime = new FullTimeEmployee(EmployeeId, fullName, Salary);
+        fullTime.DisplayInfo();
+        fullTime.Work();
+    }
 
-fullTime.DisplayInfo();
-partTime.DisplayInfo();
+    else if (EmploymentType == 2)
+    {
+        Console.WriteLine("Enter Your hourly worked");
+        int HoursWorked = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Enter Your hourly Rate");
+        int HoursRate = Convert.ToInt32(Console.ReadLine());
+        PartTimeEmployee partTime = new PartTimeEmployee(EmployeeId, fullName, HoursWorked, HoursRate);
 
-fullTime.Work();
-partTime.Work();
-//
+        partTime.DisplayInfo();
+        partTime.Work();
+
+    }
+
+    else
+    {
+        Console.WriteLine("Invalid Employment Type. Please enter 1 or 2.");
+    }
+
+}
+
+
+
+
+
+
